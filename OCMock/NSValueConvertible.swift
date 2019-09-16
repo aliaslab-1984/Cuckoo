@@ -97,6 +97,8 @@ extension NSRange: NSValueConvertible {
 }
 
 #if os(iOS)
+import UIKit
+
 extension CGRect: NSValueConvertible {
     public func toNSValue() -> NSValue {
         return NSValue(cgRect: self)
